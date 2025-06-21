@@ -1,0 +1,19 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "USERNAME": "callum",
+      "GROUP": "kal-um",
+      "ARCH": "amd64",
+      "GO_VERSION": "1.24.4",
+      "GO_CHECKSUM": "77e5da33bb72aeaef1ba4418b6fe511bc4d041873cbf82e5aa6318740df98717"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  }
+}
