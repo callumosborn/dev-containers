@@ -24,8 +24,11 @@ RUN groupadd ${GROUP} && \
   useradd -m ${USERNAME} -g ${GROUP} -s /bin/bash && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
+  build-essential \
   ca-certificates \
   curl \
+  git \
+  openssh-client \
   sudo && \
   echo ${USERNAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${USERNAME} && \
   chmod 0440 /etc/sudoers.d/${USERNAME} && \
